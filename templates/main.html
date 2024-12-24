@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{url_for('static', filename='/Image/logo.jpg')}}">
+    <link rel="stylesheet" href="/static/Css/main.css">
+    <title>AI Virtual Stylist</title>
+</head>
+<body>
+    <header>
+        <div class="name">
+            <h1>
+                <img id="logo" src="{{url_for('static', filename='/Image/logo.jpg')}}" alt="Logo of AI Virtual Stylist" />
+                AI Virtual Stylist
+            </h1>
+        </div>
+    </header>
+    <main class="content right1">
+        <!-- Gender Selection -->
+        <div class="gender">
+            <label for="gender-select">Gender</label>
+            <select id="gender-select" name="gender">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Image Upload -->
+        <div class="image-upload">
+            <label for="image-upload">Upload an Image</label>
+            <input class="img" id="image-upload" type="file" accept="image/*" />
+        </div>
+
+        <!-- Occasion Selection -->
+        <div class="occasion">
+            <label for="occasion-select">Occasion</label>
+            <select id="occasion-select" name="occasion">
+                <option value="" disabled selected>Select Occasion</option>
+                <option value="birthday">My Birthday Party</option>
+                <option value="couple-date">Couple Date</option>
+                <option value="friend-birthday">Friend's Birthday Party</option>
+                <option value="picnic">Family Picnic</option>
+                <option value="self-outing">Going Out Myself</option>
+                <option value="meeting">Meeting</option>
+                <option value="interview">Interview</option>
+                <option value="marriage">Relative's Marriage</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Dress Type Selection -->
+        <div class="dress">
+            <label for="dress-type-select">Dress Type</label>
+            <select id="dress-type-select" name="dress-type">
+                <option value="" disabled selected>Select Dress Type</option>
+                <option value="formal">Formal</option>
+                <option value="semi-formal">Semi-Formal</option>
+                <option value="western">Western</option>
+                <option value="semi-western">Semi-Western</option>
+                <option value="traditional">Traditional</option>
+                <option value="casual">Casual</option>
+                <option value="funky">Funky</option>
+            </select>
+        </div>
+        <!-- Skin Tone Selection -->
+     <div class="skin-tone">
+        <label for="skin-tone-select">Skin Tone</label>
+        <select id="skin-tone-select" name="skin-tone">
+        <option value="" disabled selected>Select Skin Tone</option>
+        <option value="fair">Fair</option>
+        <option value="light">Light</option>
+        <option value="medium">Medium</option>
+        <option value="tan">Tan</option>
+        <option value="olive">Olive</option>
+        <option value="brown">Brown</option>
+        <option value="dark">Dark</option>
+        </select>
+     </div>
+
+
+        <!-- Submit Button -->
+        <div class="actions">
+            <button id="sendbutton" class="search" type="submit">Submit</button>
+        </div>
+    </main>
+    <main class="right2">
+        <div class="">
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#contact" title="Contact Us">Contact Us</a> |
+            <a href="#privacy" title="Privacy Policy">Privacy Policy</a> |
+            <a href="#about" title="About Us">About Us</a>
+        </div>
+        <p>&copy; 2024 AI Stylist. All rights reserved.</p>
+    </footer>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
